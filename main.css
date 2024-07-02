@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Rokkitt", serif;
 }
 
 body {
@@ -10,20 +10,39 @@ body {
     padding-top: 100px;
 }
 
+body .container {
+    width: 640px;
+    padding: 42px 24px;
+    background-color: azure;
+    border-radius: 24px;
+}
+
 header {
-    display: flex;
-    align-items: center;
     margin-bottom: 40px;
 }
 
-header img {
-    height: 36px;
+header .container-titulo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header .container-titulo img {
+    height: 124px;
     margin-right: 16px;
 }
 
 header h1 {
     font-size: 40px;
     font-weight: bold;
+    margin-bottom: 12px;
+    color: #0675c4;
+}
+
+header h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: darkgray;
 }
 
 .container {
@@ -41,21 +60,22 @@ form {
 }
 
 form input {
-    font-size: 24px;
-    background-color: #fff;
-    border: none;
-    border-bottom: 2px solid #000;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(231, 246, 251);
+    border-radius: 12px;
     padding: 8px;
 }
 
 form button {
-    background-color: #009432;
+    background-color: #0675c4;
     color: #fff;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
     border: none;
+    border-radius: 12px;
     cursor: pointer;
-    padding: 8px;
+    padding: 12px;
 }
 
 table {
@@ -63,7 +83,7 @@ table {
 }
 
 table th {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid rgb(231, 246, 251);
     padding: 16px;
     font-size: 24px;
     font-weight: bold;
@@ -73,25 +93,22 @@ table td {
     padding: 16px 0;
     text-align: center;
     font-size: 18px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgb(231, 246, 251);
 }
 
-table td img {
-    height: 30px;
-}
-
-.resultado {
-    padding: 8px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #000;
-    border-radius: 3px;
-}
-
-.aprovado {
-    background-color: #009432;
-}
-
-.reprovado {
+table tbody button {
     background-color: red;
+    border: none;
+    color: white;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+table tfoot th {
+    border: none;
+}
+
+table tfoot #total {
+    font-size: 16px;
+    color: darkgray;
 }
